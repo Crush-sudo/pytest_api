@@ -1,0 +1,132 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1554626060572" stop="1554626060862">
+  <name>testuser</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1554626060572" status="passed" stop="1554626060622">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_success</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="成功登录"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060622" status="passed" stop="1554626060662">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_fail</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060662" status="passed" stop="1554626060692">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_username_not</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060692" status="passed" stop="1554626060722">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_username_long</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060722" status="failed" stop="1554626060762">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_username_null</name>
+      <failure>
+        <message>AssertionError: assert 3010 == 301</message>
+        <stack-trace>self = &lt;testsys.test_sys_login.Test_login object at 0x000001B414CF25C0&gt;
+
+    @allure.story("登录失败")
+    def test_login_username_null(self):
+        login_path = "/sys/login"
+        login_data = {"userName": "", "password": "123456"}
+        resp_dict = http.post(login_path, login_data)
+&gt;       assert resp_dict["code"] == 301
+E       assert 3010 == 301
+
+testsys\test_sys_login.py:45: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060762" status="passed" stop="1554626060792">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_psd_null</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060802" status="passed" stop="1554626060832">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_onlyname</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1554626060832" status="passed" stop="1554626060862">
+      <name>test_user_saveOrUpdateUser.Test_login.test_login_onlypsd</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="登录失败"/>
+        <label name="feature" value="登录模块"/>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="14344-MainThread"/>
+        <label name="host" value="xue"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
